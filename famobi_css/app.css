@@ -1,0 +1,27 @@
+.famobiAppLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+
+  display: none;
+  opacity: 0.8;
+  background-color: #000;
+}
+
+.famobiAppLoader:after {
+  content: '';
+  display: block;
+  margin: -16px 0 0 -16px;
+  width: 32px;
+  height: 32px;
+  background: url('../img/loading.gif') no-repeat 0 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+body.loadingAd .famobiAppLoader { display: block; }
